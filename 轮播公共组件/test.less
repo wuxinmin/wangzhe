@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    width: 200px;
+    margin: 0 auto;
+}
+.slider-container{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    border: 2px solid #f40;
+    margin-top: 100px;
+    .slider-item{
+        width: 100%;
+        flex-shrink: 0; // 压缩比例默认是1
+        // 测试代码
+        height: 100px;
+        background-color: lightblue;
+        outline: 1px solid;
+    }
+}

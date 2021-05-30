@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no 初始缩放比例，两只手指不能拉升缩放，很多网页都这样设置 -->
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>王者荣耀官网-腾讯游戏</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index_spr.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script>
+      // rem布局
+      (function () {
+        function setFont() {
+          var designWidth = 750; // 移动端设计稿宽度通常为750
+          // 设置根元素字体大小 = 视口宽度 / 设计稿宽度 * 100
+          document.documentElement.style.fontSize =
+            (document.documentElement.clientWidth / designWidth) * 100 + 'px';
+        }
+        setFont();
+        window.addEventListener('resize', setFont);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="adv">
+      <a href="" class="logo spr spr_logo"></a>
+      <div class="title">
+        <h1>王者荣耀</h1>
+        <p>团队成就更多</p>
+      </div>
+      <a href="" class="spr spr_download"></a>
+    </div>
+    <div class="nav">
+      <a href="" class="active"><span>首页</span></a>
+      <a href=""><span>攻略中心</span></a>
+      <a href=""><span>赛事中心</span></a>
+      <a href=""><span>IP新游</span></a>
+    </div>
+    <div class="banner">
+      <div class="slider-container">
+        <a href="" class="slider-item"><img src="./assets/banner1.jpeg" alt=""></a>
+        <a href="" class="slider-item"><img src="./assets/banner2.jpeg" alt=""></a>
+        <a href="" class="slider-item"><img src="./assets/banner3.jpeg" alt=""></a>
+      </div>
+      <div class="dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
